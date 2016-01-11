@@ -1,0 +1,119 @@
+<ion-side-menus enable-menu-with-back-views="false">
+   <!--ion-side-menu side="left">
+    <ion-header-bar class="bar-stable">
+      <h1 class="title">Left</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close ng-click="login()">
+          Login
+        </ion-item>
+        <ion-item menu-close href="#/app/search">
+          Search
+        </ion-item>
+        <ion-item menu-close href="#/app/browse">
+          Browse
+        </ion-item>
+        <ion-item menu-close href="#/app/playlists">
+          Playlists
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+
+   <ion-side-menu side="right">
+    <ion-header-bar class="bar-stable">
+      <h1 class="title">right</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close ng-click="login()">
+          Login
+        </ion-item>
+        <ion-item menu-close href="#/app/search">
+          Search
+        </ion-item>
+        <ion-item menu-close href="#/app/browse">
+          Browse
+        </ion-item>
+        <ion-item menu-close href="#/app/playlists">
+          Playlists
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu -->
+
+          
+ <!--  <div class="tsb-icons">
+            <ion-scroll direction="x"  class="item wide-item">
+                <span href="javascript:;"  ng-repeat="tab in [1,3,4,5,6,7]" >{{tab}}</span>
+ </ion-scroll> -->
+
+    
+ <!-- <ion-content direction="xy" style="overflow: scroll;white-space: nowrap;height:100%">
+
+     <!--   <ion-scroll direction="x" style="overflow: scroll;white-space: nowrap;">
+        <a class="button inline-button"><img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png"></a>
+        <a class="button"><img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png"></a>
+        <a class="button"><img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png"></a>
+        <a class="button"><img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png"></a>
+        <a class="button"><img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png"></a>
+        <a class="button"><img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png"></a>
+        <a class="button"><img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png"></a>
+        <a class="button"><img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png"></a>
+        <a class="button"><img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png"></a>
+        <a class="button"><img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png"></a>
+        <a class="button"><img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png"></a>
+        <a class="button"><img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png"></a>
+        <a class="button"><img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png"></a>
+        <a class="button"><img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png"></a>
+        <a class="button"><img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png"></a>
+        <a class="button"><img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png"></a>
+    <!--  </ion-scroll> 
+   </ion-content> -->
+<!-- </ion-header-bar> -->
+
+
+
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="right">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+ 
+
+
+
+
+<!-- tabs-top tabs-defaul bar-subheader has-header tabs-striped !-->
+<ion-tabs class="tabs-icon-top tabs-color-active-positive bar-subheader">
+
+  
+<ion-tab title="Status" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#//dash">
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-tab>
+
+  
+  <ion-tab title="Chats" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" href="#/tab/chats">
+    <ion-nav-view name="tab-chats"></ion-nav-view>
+  </ion-tab>
+
+  
+  <ion-tab title="Account" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" href="#/tab/account">
+    <ion-nav-view name="tab-account"></ion-nav-view>
+  </ion-tab> 
+</ion-tab> 
+ 
+
+</ion-side-menu-content>
+</ion-side-menus>

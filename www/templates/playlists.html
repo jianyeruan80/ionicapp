@@ -1,0 +1,230 @@
+<ion-view view-title="Playlists">
+  <ion-header-bar class="bar-positive bar-subheader">
+   <ion-scroll direction="x" style="overflow:hidden;font-size:15px;height:100%;white-space: nowrap;line-height:30px;border:solid red 1px">
+                 <span id="span{{$index}}" ng-click="goTab({{$index}})" ng-class="{tabFont:selectIndex==$index?true:false}" style="padding:0 10px;" ng-repeat="tab in [1,2,3,4,5,6,7,8]" >{{tab}}
+                 {{tab}}{{tab}} Ame.Cuisine{{tab}}{{tab}} </span>
+ </ion-scroll>
+</ion-header-bar>
+  <ion-content id="contentWidth"  ion-sticky>
+     <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)" does-continue=true >
+     <ion-slide>
+	    <ion-list>
+	     <ion-item class="item-divider" ng-if="selectIndex==0?true:false"> AAA{{selectIndex}} </ion-item>
+	       <ion-item item="item" ng-href="#" ng-click="itemClick()" class="item-thumbnail-left" ng-repeat="item in items" ng-class="{ active: item.isActive}">
+            <img ng-src="{{item.face}}">
+            <h2>{{item.from}}</h2>
+            <p>{{item.text}}</p>
+          </ion-item>
+	    </ion-list>
+    </ion-slide>
+    <ion-slide>
+	    <ion-list>
+          <ion-item class="item-divider" ng-if="selectIndex==1?true:false"> CCC </ion-item>
+	      <ion-item ng-repeat="playlist in playlists">
+	       22 {{playlist.title}}
+	      </ion-item>
+	   
+<ion-item class="item-divider" ng-if="selectIndex==1?true:false"> DDD </ion-item>
+	      <ion-item ng-repeat="playlist in playlists">
+	       22 {{playlist.title}}
+	      </ion-item>
+	    </ion-list>
+
+	 </ion-slide>
+	  <ion-slide>    
+	      <ion-list>
+	      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+	        33{{playlist.title}}
+	      </ion-item>
+	    </ion-list>
+      </ion-slide>
+
+      <ion-slide>
+	      <ion-list>
+	      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+	        44{{playlist.title}}
+	      </ion-item>
+	    </ion-list>
+      </ion-slide>
+
+        <ion-slide>
+	      <ion-list>
+	      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+	        55{{playlist.title}}
+	      </ion-item>
+	    </ion-list>
+      </ion-slide>
+        <ion-slide>
+	      <ion-list>
+	      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+	        66{{playlist.title}}
+	      </ion-item>
+	    </ion-list>
+      </ion-slide>
+        <ion-slide>
+	      <ion-list>
+	      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+	        77{{playlist.title}}
+	      </ion-item>
+	    </ion-list>
+      </ion-slide>
+
+
+        <ion-slide>
+		 <ion-list>
+		  <ion-item class="item-divider" ng-if="selectIndex==7?true:false"> AAA{{selectIndex}} </ion-item>
+	      <div class="list">
+            <div class="card">
+                <div class="item item-avatar">
+                    <img src="http://img00.deviantart.net/a558/i/2014/094/d/e/selena_gomez_png__2_by_lightsoflove-d7czi3r.png">
+                    <h2>Selena Gomez</h2>
+                    <p>November 05, 2015</p>
+                </div>
+
+                <div class="item item-body">
+                    <img class="full-image" src="http://starity.hu/images/articles/800x600/a-peta-ellenzi-selena-gomez-rozsaszin-lovait-06020341.jpg">
+                    <p>
+                        This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+                        the content is from a card-body consisting of an image and paragraph text.
+                    </p>
+                    <p>
+                        <a href="#" class="subdued">1 Like</a>
+                        <a href="#" class="subdued">5 Comments</a>
+                    </p>
+                </div>
+
+                <div class="item tabs tabs-secondary tabs-icon-left">
+                    <a class="tab-item" href="#">
+                        <i class="icon ion-thumbsup"></i>
+                        Like
+                    </a>
+                    <a class="tab-item" href="#">
+                        <i class="icon ion-chatbox"></i>
+                        Comment
+                    </a>
+                    <a class="tab-item" href="#">
+                        <i class="icon ion-share"></i>
+                        Share
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="item item-avatar">
+                    <img src="http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/400/img/photos/2012/05/23/cb/92/justin_bieber.jpg">
+                    <h2>Justin Bieber</h2>
+                    <p>November 05, 2015</p>
+                </div>
+
+                <div class="item item-body">
+                    <img class="full-image" src="http://lista10.org/wp-content/uploads/2013/11/justin-bieber.jpg">
+                    <p>
+                        This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+                        the content is from a card-body consisting of an image and paragraph text.
+                    </p>
+                    <p>
+                        <a href="#" class="subdued">1 Like</a>
+                        <a href="#" class="subdued">5 Comments</a>
+                    </p>
+                </div>
+
+                <div class="item tabs tabs-secondary tabs-icon-left">
+                    <a class="tab-item" href="#">
+                        <i class="icon ion-thumbsup"></i>
+                        Like
+                    </a>
+                    <a class="tab-item" href="#">
+                        <i class="icon ion-chatbox"></i>
+                        Comment
+                    </a>
+                    <a class="tab-item" href="#">
+                        <i class="icon ion-share"></i>
+                        Share
+                    </a>
+                </div>
+            </div>
+        </div>
+		 </ion-list>
+		 <ion-list>
+		  <ion-item class="item-divider" ng-if="selectIndex==7?true:false"> BBB{{selectIndex}} </ion-item>
+	      <div class="list">
+            <div class="card">
+                <div class="item item-avatar">
+                    <img src="http://img00.deviantart.net/a558/i/2014/094/d/e/selena_gomez_png__2_by_lightsoflove-d7czi3r.png">
+                    <h2>Selena Gomez</h2>
+                    <p>November 05, 2015</p>
+                </div>
+
+                <div class="item item-body">
+                    <img class="full-image" src="http://starity.hu/images/articles/800x600/a-peta-ellenzi-selena-gomez-rozsaszin-lovait-06020341.jpg">
+                    <p>
+                        This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+                        the content is from a card-body consisting of an image and paragraph text.
+                    </p>
+                    <p>
+                        <a href="#" class="subdued">1 Like</a>
+                        <a href="#" class="subdued">5 Comments</a>
+                    </p>
+                </div>
+
+                <div class="item tabs tabs-secondary tabs-icon-left">
+                    <a class="tab-item" href="#">
+                        <i class="icon ion-thumbsup"></i>
+                        Like
+                    </a>
+                    <a class="tab-item" href="#">
+                        <i class="icon ion-chatbox"></i>
+                        Comment
+                    </a>
+                    <a class="tab-item" href="#">
+                        <i class="icon ion-share"></i>
+                        Share
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="item item-avatar">
+                    <img src="http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/400/img/photos/2012/05/23/cb/92/justin_bieber.jpg">
+                    <h2>Justin Bieber</h2>
+                    <p>November 05, 2015</p>
+                </div>
+
+                <div class="item item-body">
+                    <img class="full-image" src="http://lista10.org/wp-content/uploads/2013/11/justin-bieber.jpg">
+                    <p>
+                        This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+                        the content is from a card-body consisting of an image and paragraph text.
+                    </p>
+                    <p>
+                        <a href="#" class="subdued">1 Like</a>
+                        <a href="#" class="subdued">5 Comments</a>
+                    </p>
+                </div>
+
+                <div class="item tabs tabs-secondary tabs-icon-left">
+                    <a class="tab-item" href="#">
+                        <i class="icon ion-thumbsup"></i>
+                        Like
+                    </a>
+                    <a class="tab-item" href="#">
+                        <i class="icon ion-chatbox"></i>
+                        Comment
+                    </a>
+                    <a class="tab-item" href="#">
+                        <i class="icon ion-share"></i>
+                        Share
+                    </a>
+                </div>
+            </div>
+        </div>
+		 </ion-list>
+      </ion-slide>
+
+    </ion-slide-box>
+
+  </ion-content>
+   <div class="button-pencil" ng-click="openNew()">
+    <i class="icon ion-edit"></i>
+  </div>
+</ion-view>
